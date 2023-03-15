@@ -33,7 +33,8 @@ import {
     useTranslate,
     useRouterContext,
     useMenu,
-    useRefineContext,
+    useLink,
+    useRefineContext
 } from "@refinedev/core";
 
 import { Title as DefaultTitle } from "../title";
@@ -48,15 +49,13 @@ export const Sider: typeof DefaultSider = ({ render }) => {
     };
 
     const t = useTranslate();
-    const { Link } = useRouterContext();
+    const Link = useLink();
     const { hasDashboard } = useRefineContext();
     const translate = useTranslate();
 
     const { menuItems, selectedKey, defaultOpenKeys } = useMenu();
     const isExistAuthentication = useIsExistAuthentication();
-    const { mutate: mutateLogout } = useLogout({
-        v3LegacyAuthProviderCompatible: true,
-    });
+    const { mutate: mutateLogout } = useLogout();
     const Title = useTitle();
 
     const [open, setOpen] = useState<{ [k: string]: any }>({});
@@ -83,7 +82,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
 
     const renderTreeView = (tree: ITreeMenu[], selectedKey: string) => {
         return tree.map((item: ITreeMenu) => {
-            const {name, children, meta: {icon, label, route, parent: parentName} }: any = item;
+            const {name, children, meta: {icon, label, route, parent: parentName}, key }: any = item;
             const isOpen = open[route || ""] || false;
 
             const isSelected = route === selectedKey;
@@ -111,10 +110,10 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                                         if (collapsed) {
                                             setCollapsed(false);
                                             if (!isOpen) {
-                                                handleClick(route || "");
+                                                handleClick(name || "");
                                             }
                                         } else {
-                                            handleClick(route || "");
+                                            handleClick(name || "");
                                         }
                                     }}
                                     sx={{
@@ -186,7 +185,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                     >
                         <ListItemButton
                             component={Link}
-                            to={route}
+                            to={name}
                             selected={isSelected}
                             onClick={() => {
                                 setOpened(false);
@@ -247,7 +246,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             >
                 <ListItemButton
                     component={Link}
-                    to="/"
+                    to='/'
                     selected={selectedKey === "/"}
                     onClick={() => {
                         setOpened(false);

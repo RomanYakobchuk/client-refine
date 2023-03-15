@@ -64,7 +64,6 @@ export const authProvider: AuthBindings = {
             localStorage.removeItem("user");
             return {
                 success: false,
-                authenticated: false,
                 redirectTo: '/login'
             };
         },

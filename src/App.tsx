@@ -81,17 +81,19 @@ function App() {
                             {
                                 name: "home",
                                 meta: {
-                                    icon: <Home/>
+                                    icon: <Home/>,
+                                    label: 'Home',
                                 },
-                                list: '/allInstitutions',
-                                show: '/allInstitutions/show/:id',
-                                create: '/createInstitution/create',
+                                list: '/home',
+                                show: '/home/show/:id',
+                                create: '/home/create',
                             },
                             {
                                 name: "top-institutions",
                                 list: '/top-institutions',
                                 meta: {
-                                    icon: <Star/>
+                                    icon: <Star/>,
+                                    label: "Top Institutions"
                                 },
                                 show: '/top-institutions/show/:id',
                             },
@@ -99,14 +101,16 @@ function App() {
                                 name: "drinker",
                                 list: '/drinker',
                                 meta: {
-                                    icon: <WineBar/>
+                                    icon: <WineBar/>,
+                                    label: 'Drinker'
                                 },
                             },
                             {
                                 name: "profile",
                                 list: '/profile',
                                 meta: {
-                                    icon: <Person/>
+                                    icon: <Person/>,
+                                    label: "Profile"
                                 },
                                 edit: '/profile/edit/:id'
                             },
@@ -114,42 +118,49 @@ function App() {
                                 name: "all-places",
                                 list: '/all-places',
                                 meta: {
-                                    icon: <OtherHouses/>
+                                    icon: <OtherHouses/>,
+                                    label: "All Places"
                                 },
                             },
                             {
                                 name: "favorite-places",
                                 list: '/favorite-places',
                                 meta: {
-                                    icon: <Favorite/>
+                                    icon: <Favorite/>,
+                                    label: 'Favorite places'
                                 },
                             },
                             {
                                 name: "my-review",
                                 list: '/my-review',
                                 meta: {
-                                    icon: <Reviews/>
+                                    icon: <Reviews/>,
+                                    label: 'My reviews'
                                 },
                             },
                             {
                                 name: "all-users",
                                 list: '/all-users',
                                 meta: {
-                                    icon: <Group/>
+                                    icon: <Group/>,
+                                    label: "All users"
                                 },
                             },
                             {
                                 name: "all-review",
                                 list: '/all-reviews',
                                 meta: {
-                                    icon: <Reviews/>
+                                    icon: <Reviews/>,
+                                    label: "All reviews"
                                 },
                             },
                             {
                                 name: "all-news",
                                 list: '/all-news',
+                                identifier: '/all-news',
                                 meta: {
-                                    icon: <Newspaper/>
+                                    icon: <Newspaper/>,
+                                    label: 'All news'
                                 },
                             }
                         ]}
@@ -223,10 +234,10 @@ function App() {
                                 element={
                                     <Authenticated v3LegacyAuthProviderCompatible={false}
                                         fallback={
-                                            <CatchAllNavigate to="/welcome"/>
+                                            <CatchAllNavigate to="welcome"/>
                                         }
                                     >
-                                        <Layout Header={Header}>
+                                        <Layout Header={Header} Sider={Sider} Title={Title}>
                                             <Outlet/>
                                         </Layout>
                                     </Authenticated>
@@ -235,7 +246,7 @@ function App() {
                                 <Route
                                     index
                                     element={
-                                        <NavigateToResource resource="/home"/>
+                                        <NavigateToResource/>
                                     }
                                 />
 
@@ -280,7 +291,7 @@ function App() {
                             <Route
                                 element={
                                     <Authenticated v3LegacyAuthProviderCompatible={true} fallback={<Outlet/>}>
-                                        <NavigateToResource resource={"/home"}/>
+                                        <NavigateToResource resource={"home"}/>
                                     </Authenticated>
                                 }
                             >
