@@ -91,14 +91,14 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             if (children.length > 0) {
                 return (
                     <CanAccess
-                        key={route}
+                        key={name}
                         resource={name.toLowerCase()}
                         action="list"
                         params={{
                             resource: item,
                         }}
                     >
-                        <div key={route}>
+                        <div key={name}>
                             <Tooltip
                                 title={label ?? name}
                                 placement="right"
@@ -172,7 +172,7 @@ export const Sider: typeof DefaultSider = ({ render }) => {
 
             return (
                 <CanAccess
-                    key={route}
+                    key={name}
                     resource={name.toLowerCase()}
                     action="list"
                     params={{ resource: item }}
