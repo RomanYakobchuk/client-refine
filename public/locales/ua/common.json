@@ -1,0 +1,330 @@
+{
+  "pages": {
+    "login": {
+      "title": "Увійдіть у свій акаунт",
+      "signin": "Увійти",
+      "signup": "Зареєструватися",
+      "divider": "або",
+      "activate": "Активувати",
+      "notHaveAct": "Будь ласка введіть ваш електроний адрес",
+      "notHave": "Будь ласка введіть ваш електроний адрес і пароль",
+      "fields": {
+        "email": "Електронна пошта",
+        "password": "Пароль"
+      },
+      "errors": {
+        "validEmail": "Некоректний адрес електронної пошти",
+        "active": "Схоже, що ваш обліковий запис неактивний"
+      },
+      "buttons": {
+        "submit": "Увійти",
+        "forgotPassword": "Відновити пароль?",
+        "noAccount": "Не маєте облікового запису?",
+        "rememberMe": "Запам'ятати мене"
+      }
+    },
+    "forgotPassword": {
+      "title": "Забули свій пароль?",
+      "fields": {
+        "email": "Електронна пошта"
+      },
+      "errors": {
+        "validEmail": "Некоректна електронна пошта"
+      },
+      "buttons": {
+        "submit": "Надіслати інструкцію скидання"
+      }
+    },
+    "register": {
+      "title": "Зареєструйте свій обліковий запис",
+      "fields": {
+        "email": "Електронна пошта",
+        "name": "Ім'я",
+        "dOB": "Дата народження",
+        "phone": "Номер телефону",
+        "password": "Пароль"
+      },
+      "errors": {
+        "validEmail": "Некоректна електронна пошта"
+      },
+      "buttons": {
+        "submit": "Зареєструватися",
+        "haveAccount": "Маєте обліковий запис?"
+      }
+    },
+    "updatePassword": {
+      "title": "Оновити пароль",
+      "fields": {
+        "password": "Новий Пароль",
+        "confirmPassword": "Підтвердити новий пароль"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "Паролі не співпадають",
+        "timeIsUp": "Час вийшов"
+      },
+      "buttons": {
+        "submit": "Оновити"
+      }
+    },
+    "error": {
+      "info": "Можливо, ви забули додати компонент {{action}} до ресурсу {{resource}}.",
+      "404": "Вибачте, сторінка, яку ви відвідали, не існує.",
+      "resource404": "Ви впевнені, що створили ресурс {{resource}}?",
+      "backHome": "Додому"
+    }
+  },
+  "actions": {
+    "list": "Список",
+    "create": "Створити",
+    "edit": "Редагувати",
+    "show": "Показати"
+  },
+  "buttons": {
+    "create": "Створити",
+    "save": "Зберегти",
+    "logout": "Вийти",
+    "delete": "Видалити",
+    "edit": "Редагувати",
+    "cancel": "Відмінити",
+    "close": "Закрити",
+    "confirm": "Ви впевнені?",
+    "filter": "Фільтр",
+    "clear": "Очистити",
+    "refresh": "Оновити",
+    "show": "Показати",
+    "undo": "Скасувати",
+    "import": "Шмпорт",
+    "clone": "Клонувати",
+    "submitting": "Реєстрація...",
+    "notAccessTitle": "Ви не маєте дозволу на доступ"
+  },
+  "warnWhenUnsavedChanges": "Ви впевнені, що хочете піти? У вас є незбережені зміни.",
+  "notifications": {
+    "success": "Успішний",
+    "error": "Помилка (status code: {{statusCode}})",
+    "undoable": "у вас є {{seconds}} секунд, щоб скасувати.",
+    "createSuccess": "Успішно створено {{resource}}.",
+    "createError": "Сталася помилка під час створення {{resource}} (status code: {{statusCode}})",
+    "deleteSuccess": "Успішно видалено {{resource}}.",
+    "deleteError": "Помилка при видаленні {{resource}} (status code: {{statusCode}})",
+    "editSuccess": "Успішно відредаговано {{resource}}.",
+    "editError": "Помилка при редагуванні {{resource}} (status code: {{statusCode}})",
+    "importProgress": "Імпорт: {{processed}}/{{total}}"
+  },
+  "loading": "Завантаження",
+  "tags": {
+    "clone": "Клонування"
+  },
+  "dashboard": {
+    "title": "Панель приладів"
+  },
+  "posts": {
+    "posts": "Публікації",
+    "fields": {
+      "id": "Айді",
+      "title": "Назва",
+      "category": {
+        "title": "Категорії",
+        "filter": {
+          "placeholder": "Вибрати категорію"
+        }
+      },
+      "status": {
+        "title": "Статус",
+        "published": "Опубліковано",
+        "draft": "Проект",
+        "rejected": "Відхилено"
+      },
+      "content": "Зміст",
+      "createdAt": "Створений при"
+    },
+    "titles": {
+      "create": "Створити публікацію",
+      "edit": "Редагувати публікацію",
+      "list": "Публікації",
+      "show": "Показати публікацію"
+    }
+  },
+  "home": {
+    "home": "Головна",
+    "title": "Усі заклади",
+    "notHave": "Закладів не знайдено",
+    "search": "Пошук за назвою, описом, містом, типом, особливостями, тегами",
+    "sortByType": {
+      "all": "Усі",
+      "bar": "Бар",
+      "cafe": "Кафе",
+      "restaurant": "Ресторан"
+    },
+    "pages": {
+      "show": "Показати",
+      "page": "Сторінка",
+      "of": "з"
+    },
+    "sortRating": "Сортувати за рейтингом",
+    "sortByABC": {
+      "title": "Сортувати за алфавітом",
+      "a-z": "(А-Я)",
+      "z-a": "(Я-А)"
+    },
+    "default": "За замовчуванням",
+    "create": {
+      "title": "Додати заклад",
+      "confirmTitle": "Підтвердити додавання",
+      "message": "Якщо дані введено коректно, можете додати заклад. \nЗаклад буде загальнодоступним після перевірки адміністратором",
+      "mainPhoto": "Додайте головне фото",
+      "name": "Назва закладу",
+      "description": "Опис",
+      "otherPhoto": {
+        "title": "Додайте додаткові фото",
+        "message": "Для кожного зображення виберіть номер порядку в якому ви хочете бачити їх на сайті",
+        "inputPlace": "Введіть номер порядку для фото",
+        "label": "Порядковий номер",
+        "max": "Максимальна кількість додаткових зображень 10",
+        "deleteAll": "Видалити усі",
+        "count": "Кількість зображень"
+      },
+      "city": "Місто",
+      "type": {
+        "title": "Тип закладу",
+        "bar": "Бар",
+        "cafe": "Кафе",
+        "restaurant": "Ресторан"
+      },
+      "workSchedule": {
+        "title": "Графік роботи",
+        "dayName": {
+          "monday": "Понеділок",
+          "tuesday": "Вівторок",
+          "wednesday": "Середа",
+          "thursday": "Четвер",
+          "friday": "П'ятниця",
+          "saturday": "Субота",
+          "sunday": "Неділя"
+        },
+        "workDays": {
+          "title": "Робочі дні",
+          "days": {
+            "title": "Дні",
+            "from": "З",
+            "to": "по"
+          },
+          "time": {
+            "title": "Робочі години",
+            "from": "З",
+            "to": "по"
+          }
+        },
+        "weekend": {
+          "title": "Вихідні дні",
+          "from": "З",
+          "to": "по",
+          "example": "Приклад"
+        }
+      },
+      "location": {
+        "title": "Місцезнаходження",
+        "coordinates": {
+          "title": "Координати",
+          "longitude": "Довгота",
+          "latitude": "Широта"
+        }
+      },
+      "contacts": "Контакти",
+      "tags": "Теги",
+      "averageCheck": "Середній чек",
+      "features": "Особливості"
+    }
+  },
+  "top_institutions": {
+    "top_institutions": "Топ закладів",
+    "title": "Топ закладів"
+  },
+  "drinker": {
+    "drinker": "Capl",
+    "title": "Зарезервувати місця"
+  },
+  "all-places": {
+    "all-places": "Всі заклади",
+    "title": "Всі заклади"
+  },
+  "my-institution": {
+    "my-institution": "Мої заклади",
+    "title": "Мої заклади"
+  },
+  "my-review": {
+    "my-review": "Мої відгуки",
+    "title": "Мої відгуки"
+  },
+  "all-review": {
+    "all-review": "Усі відгуки",
+    "title": "Усі відгуки"
+  },
+  "all-users": {
+    "all-users": "Усі користувачі",
+    "title": "Усі користувачі"
+  },
+  "all-news": {
+    "all-news": "Усі новини",
+    "title": "Усі новини"
+  },
+  "favorite-places": {
+    "favorite-places": "Улюблені місця",
+    "title": "Улюблені місця"
+  },
+  "profile": {
+    "profile": "Мій профіль",
+    "title": "Мій профіль",
+    "email": "Електронний адрес: ",
+    "edit": {
+      "dOB": "Дата народження:",
+      "name": "Ім'я:",
+      "phone": "Номер телефону: ",
+      "avatar": "Фото профілю: ",
+      "title": "Редагувати профіль",
+      "change": "Змінити",
+      "save": "Зберегти",
+      "delete": "Видалити",
+      "cancel": "Скасувати",
+      "alert": "Вам має бути більше 18!!!"
+    }
+  },
+  "table": {
+    "actions": "Дії"
+  },
+  "agreement": {
+    "title": "Угода користувача",
+    "accept": "Я приймаю угоду користувача",
+    "alert": "Вам потрібно прийняти угоду користувача!",
+    "text1": "Запускаючи цей додаток ви погоджуєтесь, що вам є 18 років.",
+    "text2": "Адміністрція сайту застерігає вас бути обережним і не зустрічатися з незнайомими людьми в небезпечних чи не відомих вам місцях.",
+    "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis, commodi explicabo\n            itaque iure maiores molestiae necessitatibus neque nesciunt placeat rem repellat repellendus rerum sapiente\n            velit voluptas, voluptates voluptatibus! Accusamus, aperiam corporis delectus dolorum et explicabo facere\n            facilis in laboriosam maxime pariatur perspiciatis, praesentium quae, sed tenetur vero voluptatum."
+  },
+  "verify": {
+    "title": "Введіть код перевірки",
+    "code": "Верифікаційний код",
+    "activation": "Активація",
+    "submit": "Перевірити",
+    "verifyMes": "Перейдіть в пошту, для активації акаунта",
+    "openGmail": "відкрити Gmail",
+    "submitting": "Перевірка...",
+    "again": "Отримати код",
+    "remained": "Залишилося {{s}} секунд",
+    "notCode": "Не отримали код?"
+  },
+  "importantText": "Після реєстрації вам буде потрібно підтвердити ваш електронний адрес та мобільний номер",
+  "welcomePage": {
+    "title": "Вітаємо на нашому сайті",
+    "text": "Ми допоможемо вам легко знайти необхідний заклад для відпочинку.",
+    "text2": "Все, що вам необхідно зробити - зарєструватися на нашій платформі, та підтвердити свої дані",
+    "question": "Вже зарестровані?"
+  },
+  "logout": {
+    "title": "Вихід",
+    "message": "Ви впевнені, що хочете вийти?",
+    "buttons": {
+      "cancel": "Відміна",
+      "ok": "Так"
+    }
+  }
+}

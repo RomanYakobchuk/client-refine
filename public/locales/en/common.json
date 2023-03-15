@@ -5,12 +5,16 @@
       "signin": "Sign in",
       "signup": "Sign up",
       "divider": "or",
+      "activate": "Activate",
+      "notHaveAct": "Please enter your email",
+      "notHave": "Please enter your email and password",
       "fields": {
-        "email": "Email",
+        "email": "Email Address",
         "password": "Password"
       },
       "errors": {
-        "validEmail": "Invalid email address"
+        "validEmail": "Invalid email address",
+        "active": "It looks like your account is inactive"
       },
       "buttons": {
         "submit": "Login",
@@ -34,7 +38,10 @@
     "register": {
       "title": "Sign up for your account",
       "fields": {
-        "email": "Email",
+        "email": "Email address",
+        "name": "Name",
+        "phone": "Phone",
+        "dOB": "Date of Birth",
         "password": "Password"
       },
       "errors": {
@@ -52,7 +59,8 @@
         "confirmPassword": "Confirm new password"
       },
       "errors": {
-        "confirmPasswordNotMatch": "Passwords do not match"
+        "confirmPasswordNotMatch": "Passwords do not match",
+        "timeIsUp": "Time is up"
       },
       "buttons": {
         "submit": "Update"
@@ -78,6 +86,7 @@
     "delete": "Delete",
     "edit": "Edit",
     "cancel": "Cancel",
+    "close": "Close",
     "confirm": "Are you sure?",
     "filter": "Filter",
     "clear": "Clear",
@@ -86,6 +95,7 @@
     "undo": "Undo",
     "import": "Import",
     "clone": "Clone",
+    "submitting": "Submitting...",
     "notAccessTitle": "You don't have permission to access"
   },
   "warnWhenUnsavedChanges": "Are you sure you want to leave? You have unsaved changes.",
@@ -135,7 +145,186 @@
       "show": "Show Post"
     }
   },
+  "home": {
+    "home": "Home",
+    "title": "All Institutions",
+    "notHave": "There are no institutions",
+    "search": "Search by title, description, city, type, features, tags",
+    "sortByType": {
+      "all": "All",
+      "bar": "Bar",
+      "cafe": "Cafe",
+      "restaurant": "Restaurant"
+    },
+    "pages": {
+      "show": "Show",
+      "page": "Page",
+      "of": "of"
+    },
+    "sortRating": "Sort rating",
+    "sortByABC": {
+      "title": "Sort alphabetically",
+      "a-z": "(A-Z)",
+      "z-a": "(Z-A)"
+    },
+    "default": "Default",
+    "create": {
+      "title": "Add institution",
+      "confirmTitle": "Confirm the addition",
+      "message":"If the data is entered correctly, you can add an institution. \nThe institution will be publicly available after verification by an administrator",
+      "mainPhoto": "Add a main photo",
+      "name": "Name of the institution",
+      "description": "Description",
+      "otherPhoto": {
+        "title":"Add additional photo",
+        "message": "For each image, select the order number in which you want them to appear on the website",
+        "inputPlace": "Enter the order number for the photo",
+        "label": "Order number",
+        "max": "The maximum number of additional images is 10",
+        "deleteAll": "Remove all",
+        "count": "Number of images"
+      },
+      "city": "City",
+      "type": {
+        "title": "Type of institution",
+        "bar": "Bar",
+        "cafe": "Cafe",
+        "restaurant": "Restaurant"
+      },
+      "workSchedule": {
+        "title": "Work schedule",
+        "dayName": {
+          "monday": "Monday",
+          "tuesday": "Tuesday",
+          "wednesday": "Wednesday",
+          "thursday": "Thursday",
+          "friday": "Friday",
+          "saturday": "Saturday",
+          "sunday": "Sunday"
+        },
+        "workDays": {
+          "title": "Working days",
+          "days": {
+            "title": "Days",
+            "from": "From",
+            "to": "to"
+          },
+          "time": {
+            "title": "Working hours",
+            "from": "From",
+            "to": "to"
+          }
+        },
+        "weekend": {
+          "title": "Weekend",
+          "from": "From",
+          "to": "to",
+          "example": "Example"
+        }
+      },
+      "location": {
+        "title": "Location",
+        "coordinates": {
+          "title": "Coordinates",
+          "longitude": "Longitude",
+          "latitude": "Latitude"
+        }
+      },
+      "contacts": "Contacts",
+      "tags": "Tags",
+      "averageCheck": "Average check",
+      "features": "Features"
+    }
+  },
+  "top_institutions": {
+    "top_institutions": "Top institutions",
+    "title": "Top institutions"
+  },
+  "drinker": {
+    "drinker": "Capl",
+    "title": "Reserve seats"
+  },
+  "all-places": {
+    "all-places": "All institutions",
+    "title": "All institutions"
+  },
+  "my-institution": {
+    "my-institution": "My institutions",
+    "title": "My institutions"
+  },
+  "my-review": {
+    "my-review": "My reviews",
+    "title": "My reviews"
+  },
+  "all-review": {
+    "all-review": "All reviews",
+    "title": "All reviews"
+  },
+  "all-users": {
+    "all-users": "All users",
+    "title": "All users"
+  },
+  "all-news": {
+    "all-news": "All news",
+    "title": "All news"
+  },
+  "favorite-places": {
+    "favorite-places": "Favorite places",
+    "title": "Favorite places"
+  },
+  "profile": {
+    "profile": "My profile",
+    "title": "My profile",
+    "email": "Email: ",
+    "edit": {
+      "dOB": "Date of birth: ",
+      "name": "Name: ",
+      "phone": "Phone number: ",
+      "avatar": "Profile photo: ",
+      "title": "Edit profile",
+      "change": "Change",
+      "save": "Save",
+      "delete": "Delete",
+      "cancel": "Cancel",
+      "alert": "You must be over 18!!!"
+    }
+  },
   "table": {
     "actions": "Actions"
+  },
+  "agreement": {
+    "title": "User agreement",
+    "accept": "I accept the user agreement",
+    "alert": "You need to accept the user agreement!",
+    "text1": "By running this application, you agree that you are 18 years old.",
+    "text2": "The site administration warns you to be careful and not to meet strangers in dangerous or unfamiliar places.",
+    "text3": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi blanditiis, commodi explicabo\n            itaque iure maiores molestiae necessitatibus neque nesciunt placeat rem repellat repellendus rerum sapiente\n            velit voluptas, voluptates voluptatibus! Accusamus, aperiam corporis delectus dolorum et explicabo facere\n            facilis in laboriosam maxime pariatur perspiciatis, praesentium quae, sed tenetur vero voluptatum."
+  },
+  "verify": {
+    "title": "Enter the verification code",
+    "code": "Verify code",
+    "submit": "Verify",
+    "activation": "Activation",
+    "verifyMes": "Go to gmail to activate the account",
+    "openGmail": "Open Gmail",
+    "submitting": "Verification...",
+    "again": "Get code",
+    "remained": "Seconds lef {{s}}",
+    "notCode": "Did`t get the code?"
+  },
+  "importantText": "After registration, you will need to confirm your email address and mobile number",
+  "welcomePage": {
+    "title": "Welcome to our website",
+    "text": "We will help you easily find the necessary recreation facility.",
+    "text2": "All you need to do is register on our platform and confirm your data",
+    "question": "Already registered?"
+  },
+  "logout": {
+    "title": "LogOut",
+    "message": "Are you sure you want to leave?",
+    "buttons": {
+      "cancel": "Cancel",
+      "ok": "Yes"
+    }
   }
 }
